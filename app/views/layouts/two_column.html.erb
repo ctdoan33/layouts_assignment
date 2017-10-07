@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LayoutsAssignment</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col-sm-6"><%= yield :col_1of2 %></div>
+        <div class="col-sm-6"><%= yield :col_2of2 %></div>
+    </div>
+</body>
+</html>
